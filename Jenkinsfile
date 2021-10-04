@@ -53,9 +53,9 @@ pipeline {
 	
 
 	         // Deploy Stages
-	        stage('Deploy to CAG_All') {
+	        stage('Deploy to UAT') {
 	            steps {
-	                echo "Deploying ${BRANCH_NAME} to CAG_All "
+	                echo "Deploying ${BRANCH_NAME} to UAT "
 	                UiPathDeploy (
 	                packagePath: "Output\\${env.BUILD_NUMBER}",
 	                orchestratorAddress: "${UIPATH_ORCH_URL}",
