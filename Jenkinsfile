@@ -8,9 +8,9 @@ pipeline {
 	        MINOR = '0'
 	        //Orchestrator Services
 	        UIPATH_ORCH_URL = "https://cloud.uipath.com/"
-	        UIPATH_ORCH_LOGICAL_NAME = "anupaminc"
-	        UIPATH_ORCH_TENANT_NAME = "Descriptify"
-	        UIPATH_ORCH_FOLDER_NAME = "Default"
+	        UIPATH_ORCH_LOGICAL_NAME = "changi_airport"
+	        UIPATH_ORCH_TENANT_NAME = "CAG_All"
+	        UIPATH_ORCH_FOLDER_NAME = "JenkinsDemo"
 	    }
 	
 
@@ -53,9 +53,9 @@ pipeline {
 	
 
 	         // Deploy Stages
-	        stage('Deploy to UAT') {
+	        stage('Deploy to CAG_All') {
 	            steps {
-	                echo "Deploying ${BRANCH_NAME} to UAT "
+	                echo "Deploying ${BRANCH_NAME} to CAG_All "
 	                UiPathDeploy (
 	                packagePath: "Output\\${env.BUILD_NUMBER}",
 	                orchestratorAddress: "${UIPATH_ORCH_URL}",
