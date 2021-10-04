@@ -10,7 +10,7 @@ pipeline {
 	        UIPATH_ORCH_URL = "https://cloud.uipath.com/"
 	        UIPATH_ORCH_LOGICAL_NAME = "changi_airport"
 	        UIPATH_ORCH_TENANT_NAME = "CAG_All"
-	        UIPATH_ORCH_FOLDER_NAME = "JenkinsDemo"
+	        UIPATH_ORCH_FOLDER_NAME = "UAT(Classic)"
 	    }
 	
 
